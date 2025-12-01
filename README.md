@@ -1,10 +1,4 @@
 # TUGAS-GDGOC-WEB-DEVELOPMENT
-Tugas GDGOC mengenai pembuatan mini project menggunakan bahasa html, css, dan juga javascript.
-Tentu, berdasarkan ringkasan dari repositori tersebut, berikut adalah draf **README** untuk proyek Anda:
-
------
-
-# TUGAS-GDGOC-WEB-DEVELOPMENT
 
 **Mini Project Web Development GDGOC**
 
