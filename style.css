@@ -1,0 +1,341 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { 
+    background: hsl(0, 10%, 78%);
+    color: #5e5555;
+    display: flex;
+    flex-direction: column;            
+    min-height: 100vh;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family:"monaco", monospace;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family : "Monaco", monospace;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: "Yu Gothic", sans-serif;
+    font-weight: 400;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #00ffc3;
+    font-family: "Monaco", monospace;
+}
+
+.btn-primary {
+    padding: 12px 22px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family : "Monaco", monospace;
+}
+.btn-primary:hover {
+    background: #0056c4;
+}
+.features-title {
+    font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #000000;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-left : 50px;
+    margin-right : 50px;
+}
+.feature-card {
+    background: rgb(252, 254, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.feature-card h3 {
+    color: #007bff;
+    margin-top: 2px;
+    margin-bottom: 15px;    
+}
+.feature-card p {
+    color: #555555;
+    margin-bottom: 2px;
+}
+
+
+/* Page Content */
+.page-content {
+    width: 80%;
+    margin: 60px auto;
+    padding: 20px;
+}
+.page-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: "Monaco" , monospace;
+}
+.section-subtitle {
+    color: #6d4141;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family : "Monaco", monospace;;
+    font-size : 22px;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    font-family : "Yu Gothic", sans-serif;
+    font-size : 18px;
+}
+.about-text h2 {
+    margin-bottom: 5px;
+    color: #000000;
+    font-family : "Yu Gothic", sans-serif;
+    font-size : 25px;
+}
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.9;
+    color: #000000;
+    font-family : "Yu Gothic", sans-serif;
+    font-size : 18px;
+}
+
+.about-stats {
+    flex: 1.5;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    font-family : "Monaco", monospace;
+}
+.about-image {
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+    margin-right: -50px;
+}
+.about-image1 {
+    right:0;
+    bottom:0;
+    position : fixed;
+    z-index: 1;
+}
+.stat-box {
+    margin-top : 15px;
+    gap : 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 50px;
+    width: 200px;
+    height : 85px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+.stat-box h3 {
+    color: #a89057;
+    font-family : "Monaco", monospace;
+}
+.stat-box p {
+    color: #555555;
+    font-family : "Monaco", monospace;
+    margin-right : 5px;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Education */
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.education-item h3 {
+    margin-bottom: 10px;
+    font-family:"Monaco", monospace;
+}
+.education-item p {
+    margin-bottom: 5px;
+    color: #000000;
+    font-family:"Yu Gothic", sans-serif;
+}
+
+.education-year {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #d35d4d;
+    font-family:"Monaco", monospace;
+}
+.education-image {
+    left:0;
+    bottom : 0;
+    position : fixed;
+    z-index : 1;
+}
+
+/* Contact */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: left
+}
+
+.contact-info {
+    flex: 1;
+}
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #000000;
+    font-family : "Yu Gothic", sans-serif;
+    font-size : 25px;
+}   
+.info-item {
+    margin-bottom: 15px;
+    font-family : "Monaco", monospace;
+}
+.info-item h3 {
+    margin-bottom: 5px;
+    color: #000000;
+    font-family : "Monaco", monospace;
+    align-items: center;
+    font-size : 40px;
+}
+.info-item p {
+    color: #555555;
+    font-family : "yu gothic", sans-serif;
+    align-items: center;
+    font-size : 30px;}
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+.contact-image {
+    flex: 1;
+    min-width: 200px;
+    margin-right: -50px;
+    margin-bottom : -10px;
+    position : fixed;
+    bottom : -10;
+    right:0;
+    z-index : 1;
+}
+.form-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}   
